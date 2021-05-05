@@ -26,7 +26,7 @@ int main()
         cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
         
-        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah, totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot, micro, microh, cocina, cocinah, refri, refrih, lavadora, lavadorah, totalelectro;
+        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah, totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot, micro, microh, cocina, cocinah, refri, refrih, lavadora, lavadorah, totalelectro, adicional, adicionalh, wattadicional, totaladicional;
 		float resultado;
         switch (opcion) {
             case 1:
@@ -105,7 +105,22 @@ int main()
                 cout << "\t---------------------------" << endl;
                 totalelectro = ((cocina*cocinah*33)+(micro*microh*50)+(refri*24*15)+(lavadora*lavadorah*40));
                 cout << "\tResultado: " << totalelectro <<" watts"<<endl;
-                break;           
+                break;
+            case 4:
+             // Instrucciones para captura de datos del consumo adicional
+            cout << "\n\tIngrese la cantidad de consumos adicionales: ";
+            cin >> adicional;
+
+            cout << "\n\tIngrese la cantidad de horas de los adicionales: ";
+            cin >> adicionalh;
+
+            cout << "\n\tIngrese la cantidad de watts de los adicionales: ";
+            cin >> wattadicional;
+
+            totaladicional = (adicional*adicionalh*wattadicional);
+            cout << "\tResultado Consumo Adicional: " << totaladicional <<" watts"<<endl;
+            break;
+
 		
                 
                
