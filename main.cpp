@@ -26,7 +26,7 @@ int main()
         cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
         
-        int bombillo, horabombillo, wattbombillo, totalbombillo, numero2;
+        int bombillo, horabombillo, wattbombillo, totalbombillo, compu, celu, tablets, compuh, celuh, tabletsh, totaliot;
 		float resultado;
         switch (opcion) {
             case 1:
@@ -42,60 +42,37 @@ int main()
                 
                 cout << "\t---------------------------" << endl;
                 totalbombillo = (bombillo*horabombillo*wattbombillo);
-                cout << "\tResultado: " << totalbombillo << endl;
-                
-                system("pause>nul");
+                cout << "\tResultado: " << totalbombillo <<" watts"<<endl;
                 break;
-                
             case 2:
-                // Instrucciones para restar dos números
-                cout << "\n\tIngrese primer numero: ";
-                cin >> numero1;
+                // Instrucciones para captura de datos de la casa bombillos, flurecentes etc
+                cout << "\n\tIngrese la cantidad de computadoras: ";
+                cin >> compu;
+
+                cout << "\n\tIngrese la cantidad de horas encendidas de la computadoras: ";
+                cin >> compuh;
+
+                cout << "\n\tIngrese la cantidad de celulares: ";
+                cin >> celu;
                 
-                cout << "\tIngrese segundo numero: ";
-                cin >> numero2;
+                cout << "\n\tIngrese la cantidad de horas encendidas de la celulares: ";
+                cin >> celuh;
+
+                cout << "\tIngrese la cantidad de tablets: ";
+                cin >> tablets;
                 
+                cout << "\n\tIngrese la cantidad de horas encendidas de la tablets: ";
+                cin >> tabletsh;
+
                 cout << "\t---------------------------" << endl;
-                resultado = numero1 - numero2;
-                cout << "\tResultado: " << resultado << endl;
-                
-                system("pause>nul");
+                totaliot = ((compu*compuh)+(celu*celuh)+(tablets*tabletsh))*0.5;
+                cout << "\tResultado: " << totaliot <<" watts"<<endl;
                 break;
                 
-            case 3:
-                // Instrucciones para multiplicar dos números
-                cout << "\n\tIngrese primer numero: ";
-                cin >> numero1;
+            
+		
                 
-                cout << "\tIngrese segundo numero: ";
-                cin >> numero2;
-                
-                cout << "\t---------------------------" << endl;
-                resultado = numero1 * numero2;
-                cout << "\tResultado: " << resultado << endl;
-                
-                system("pause>nul");
-                break;
-                
-            case 4:
-                // Instrucciones para dividir dos números
-                cout << "\n\tIngrese primer numero: ";
-                cin >> numero1;
-                
-                cout << "\tIngrese segundo numero: ";
-                cin >> numero2;
-                
-                cout << "\t---------------------------" << endl;
-                
-                if (numero2 == 0) {
-                	cout << "\tResultado: No se puede dividir por cero." << endl; 
-		} else {
-			resultado = numero1 / (numero2 * 1.0);
-			cout << "\tResultado: " << resultado << endl;
-		}
-                
-                system("pause>nul");     
-                break;
+               
             
             case 0:
             	repetir = false;
