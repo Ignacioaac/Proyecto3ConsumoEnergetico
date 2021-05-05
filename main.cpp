@@ -37,7 +37,7 @@ int main()
                 cout << "\n\tIngrese la cantidad de horas que pasan encendidos los bombillos: ";
                 cin >> horabombillo;
                 
-                cout << "\tIngrese la cantidad de watts de los bombillos: ";
+                cout << "\n\tIngrese la cantidad de watts de los bombillos: ";
                 cin >> wattbombillo;
 
                 cout << "\n\tIngrese la cantidad de camaras: ";
@@ -68,7 +68,7 @@ int main()
                 cout << "\n\tIngrese la cantidad de horas encendidas de la celulares: ";
                 cin >> celuh;
 
-                cout << "\tIngrese la cantidad de tablets: ";
+                cout << "\n\tIngrese la cantidad de tablets: ";
                 cin >> tablets;
                 
                 cout << "\n\tIngrese la cantidad de horas encendidas de la tablets: ";
@@ -93,7 +93,7 @@ int main()
                 cout << "\n\tIngrese la cantidad de horas encendido el microondas: ";
                 cin >> micro;
 
-                cout << "\tIngrese la cantidad de refrigeradoras: ";
+                cout << "\n\tIngrese la cantidad de refrigeradoras: ";
                 cin >> refri;
                 
                 cout << "\n\tIngrese la cantidad de lavadoras: ";
@@ -104,7 +104,7 @@ int main()
 
                 cout << "\t---------------------------" << endl;
                 totalelectro = ((cocina*cocinah*33)+(micro*microh*50)+(refri*24*15)+(lavadora*lavadorah*40));
-                cout << "\tResultado: " << totaliot <<" watts"<<endl;
+                cout << "\tResultado: " << totalelectro <<" watts"<<endl;
                 break;           
 		
                 
