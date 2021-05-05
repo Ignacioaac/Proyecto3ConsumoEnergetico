@@ -26,8 +26,7 @@ int main()
         cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
         
-        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah; 
-        int totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot;
+        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah, totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot, micro, microh, cocina, cocinah, refri, refrih, lavadora, lavadorah, totalelectro;
 		float resultado;
         switch (opcion) {
             case 1:
@@ -56,7 +55,7 @@ int main()
                  cout << "\tResultado Camaras: " << totalcamara <<" watts"<<endl;
                 break;
             case 2:
-                // Instrucciones para captura de datos de la casa bombillos, flurecentes etc
+                // Instrucciones para captura de datos de dispositivos iot
                 cout << "\n\tIngrese la cantidad de computadoras: ";
                 cin >> compu;
 
@@ -79,8 +78,34 @@ int main()
                 totaliot = ((compu*compuh)+(celu*celuh)+(tablets*tabletsh))*0.5;
                 cout << "\tResultado: " << totaliot <<" watts"<<endl;
                 break;
+               
+            case 3:
+                // Instrucciones para captura de datos del consumo electródomesticos
+                cout << "\n\tIngrese la cantidad de cocinas: ";
+                cin >> cocina;
+
+                cout << "\n\tIngrese la cantidad de horas encendidas de la cocina: ";
+                cin >> cocinah;
+
+                cout << "\n\tIngrese la cantidad de microndas: ";
+                cin >> micro;
                 
-            
+                cout << "\n\tIngrese la cantidad de horas encendido el microondas: ";
+                cin >> micro;
+
+                cout << "\tIngrese la cantidad de refrigeradoras: ";
+                cin >> refri;
+                
+                cout << "\n\tIngrese la cantidad de lavadoras: ";
+                cin >> lavadora;
+
+                cout << "\n\tIngrese la cantidad de lavadas que: ";
+                cin >> lavadorah;                
+
+                cout << "\t---------------------------" << endl;
+                totalelectro = ((cocina*cocinah*33)+(micro*microh*50)+(refri*24*15)+(lavadora*lavadorah*40));
+                cout << "\tResultado: " << totaliot <<" watts"<<endl;
+                break;           
 		
                 
                
