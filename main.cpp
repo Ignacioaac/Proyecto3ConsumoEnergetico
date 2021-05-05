@@ -26,7 +26,7 @@ int main()
         cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
         
-        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah, totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot, micro, microh, cocina, cocinah, refri, refrih, lavadora, lavadorah, totalelectro, adicional, adicionalh, wattadicional, totaladicional;
+        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah, totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot, micro, microh, cocina, cocinah, refri, refrih, lavadora, lavadorah, totalelectro, adicional, adicionalh, wattadicional, totaladicional, totalcasa;
 		float resultado;
         switch (opcion) {
             case 1:
@@ -120,8 +120,17 @@ int main()
             totaladicional = (adicional*adicionalh*wattadicional);
             cout << "\tResultado Consumo Adicional: " << totaladicional <<" watts"<<endl;
             break;
-
-		
+          
+          case 5:
+          //Desplegar consumos
+          cout<<"\n\tConsumo total de la casa: "<<totalbombillo+totalcamara<<" watts"<<endl;
+          cout<<"\n\tConsumo total de la IOT: "<<totaliot<<" watts"<<endl;
+          cout<<"\n\tConsumo total de la Electródomesticos: "<<totalelectro<<" watts"<<endl;
+          cout<<"\n\tConsumo total de la Adicional: "<<totaladicional<<" watts"<<endl;
+          totalcasa=(totalbombillo+totalcamara+totaliot+totalelectro+totaladicional);
+          cout<<"\n\tConsumo total por dia: "<<totalcasa<<" watts"<<endl;
+          cout<<"\n\tConsumo total por semana: "<<totalcasa*7<<" watts"<<endl;
+          cout<<"\n\tConsumo total por mes: "<<totalcasa*30<<" watts"<<endl;
                 
                
             
