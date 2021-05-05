@@ -26,7 +26,8 @@ int main()
         cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
         
-        int bombillo, horabombillo, wattbombillo, totalbombillo, compu, celu, tablets, compuh, celuh, tabletsh, totaliot;
+        int bombillo, horabombillo, wattbombillo, totalbombillo, camara, camarah; 
+        int totalcamara, compu, celu, tablets, compuh, celuh, tabletsh, totaliot;
 		float resultado;
         switch (opcion) {
             case 1:
@@ -39,10 +40,20 @@ int main()
                 
                 cout << "\tIngrese la cantidad de watts de los bombillos: ";
                 cin >> wattbombillo;
-                
+
+                cout << "\n\tIngrese la cantidad de camaras: ";
+                cin >> camara;
+
+                cout << "\n\tIngrese la cantidad de horas que pasan encendidas las camaras: ";
+                cin >> camarah;
+                                
                 cout << "\t---------------------------" << endl;
+                 totalcamara= (camara*camarah*0.5);
                 totalbombillo = (bombillo*horabombillo*wattbombillo);
-                cout << "\tResultado: " << totalbombillo <<" watts"<<endl;
+
+                cout << "\tResultado Bombillos: " << totalbombillo <<" watts"<<endl;
+
+                 cout << "\tResultado Camaras: " << totalcamara <<" watts"<<endl;
                 break;
             case 2:
                 // Instrucciones para captura de datos de la casa bombillos, flurecentes etc
