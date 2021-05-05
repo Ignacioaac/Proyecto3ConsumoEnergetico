@@ -20,25 +20,29 @@ int main()
         cout << "\t2. Insertar consumo de dispositivos IOT" << endl;
         cout << "\t3. Insertar consumo Electródomesticos" << endl;
         cout << "\t4. Insertar consumo adicional" << endl;
+        cout << "\t5. Calculo de Consumo" << endl;
         cout << "\t0. SALIR" << endl;
         
         cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
         
-        int numero1, numero2;
+        int bombillo, horabombillo, wattbombillo, totalbombillo, numero2;
 		float resultado;
         switch (opcion) {
             case 1:
-                // Instrucciones para sumar dos números
-                cout << "\n\tIngrese primer numero: ";
-                cin >> numero1;
+                // Instrucciones para captura de datos de la casa bombillos, flurecentes etc
+                cout << "\n\tIngrese la cantidad de bombillos: ";
+                cin >> bombillo;
+
+                cout << "\n\tIngrese la cantidad de horas que pasan encendidos los bombillos: ";
+                cin >> horabombillo;
                 
-                cout << "\tIngrese segundo numero: ";
-                cin >> numero2;
+                cout << "\tIngrese la cantidad de watts de los bombillos: ";
+                cin >> wattbombillo;
                 
                 cout << "\t---------------------------" << endl;
-                resultado = numero1 + numero2;
-                cout << "\tResultado: " << resultado << endl;
+                totalbombillo = (bombillo*horabombillo*wattbombillo);
+                cout << "\tResultado: " << totalbombillo << endl;
                 
                 system("pause>nul");
                 break;
