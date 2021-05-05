@@ -131,6 +131,7 @@ int main()
           cout<<"\n\tConsumo total por dia: "<<totalcasa<<" watts"<<endl;
           cout<<"\n\tConsumo total por semana: "<<totalcasa*7<<" watts"<<endl;
           cout<<"\n\tConsumo total por mes: "<<totalcasa*30<<" watts"<<endl;
+          break;
                 
                
             
